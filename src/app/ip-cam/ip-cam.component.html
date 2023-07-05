@@ -1,0 +1,20 @@
+<!-- <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+        <source src="http://static.videogular.com/assets/videos/videogular.mp4" type="video/mp4">
+    </video>
+</vg-player> -->
+
+<!-- <vg-player>
+    <vg-overlay-play></vg-overlay-play>
+    <vg-buffering></vg-buffering>
+    <video #mymedia vgStreaming [vgStreamingSrc]="rtspStreamUrl" preload="auto" controls >
+    </video>
+</vg-player> -->
+
+<vg-player>
+    <video #vgVideo vgStreaming id="video" controls>
+        <source src="rtspStreamUrl" type="video/mp4">
+    </video>
+    <vg-overlay-play></vg-overlay-play>
+    <vg-buffering></vg-buffering>
+  </vg-player>

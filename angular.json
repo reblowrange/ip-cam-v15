@@ -30,9 +30,15 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@videogular/ngx-videogular/fonts/videogular.css",
+              "node_modules/video.js/dist/video-js.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/jsVideoPlugin-1.0.0.min.js",
+              "src/assets/webVideoCtrl.js"
+            ]
           },
           "configurations": {
             "production": {

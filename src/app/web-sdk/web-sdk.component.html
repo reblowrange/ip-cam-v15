@@ -1,0 +1,32 @@
+<div id="divPlugin" class="plugin"></div>
+<fieldset class="login">
+    <legend>Login</legend>
+    <table cellpadding="0" cellspacing="3" border="0">
+        <tr>
+            <td colspan="4">
+                <!-- <input type="button" class="btn" value="Login" (click)="clickLogin();" />
+                <input type="button" class="btn" value="Logout" (click)="clickLogout();" /> -->
+                <!-- <input type="button" class="btn2" value="Get basic info" onclick="clickGetDeviceInfo();" /> -->
+            </td>
+        </tr>
+        <tr>
+            <td class="tt">Logined devices</td>
+            <td>
+                <h6>{{loggedInDevice}}</h6>
+            </td>
+            <td class="tt">Channel list</td>
+            <td>
+                <select id="channels" class="sel">
+                    <option *ngFor="let i of channels" value="i?.id">{{i?.name}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="btn2" value="Capture" (click)="captureScreen();" />
+            </td>
+        </tr>
+    </table>
+    <img [src]="imageUrl" *ngIf="imageUrl" alt="Captured Picture">
+    Log: <div [innerHTML]="logX"></div>
+</fieldset>
